@@ -5,7 +5,7 @@ from pypuclib import Resolution, PUCException, GPUSetup
 
 print(pypuclib.__doc__)
 
-# To connect the camera first detected
+# To connect the camera first detected こんにちは
 cam = CameraFactory().create()
 
 # To decode image, get decoder obj from camera
