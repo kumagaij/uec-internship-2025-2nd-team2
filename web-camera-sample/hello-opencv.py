@@ -1,6 +1,6 @@
 import cv2 # need to import extra module "pip install opencv-python"
 
-# 画像読み込み
+# 画像読み込みてすと
 path = "C:\\Users\\photron\\work\\webcamera-sample\\img\\infinicam.png"
 img = cv2.imread(path)
 
