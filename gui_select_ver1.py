@@ -1,9 +1,6 @@
 import tkinter
 import tkinter.ttk
 
-# def select_var(e):
-#     mes["text"] = combo1.get()
-
 root = tkinter.Tk()
 root.title("conbobox")
 root.geometry("400x200")
@@ -19,7 +16,4 @@ combo1.set(data_list1[0])
 combo1.bind("<<ComboboxSelected>>")
 combo1.place(x=150,y=50)
 
-# mes = tkinter.Message(root,text="ok",
-#                       width=50,bg="white",font=("System",12))
-# mes.place(x=350,y=46)
 root.mainloop()
