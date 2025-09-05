@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
-pointX = 70
-pointY = 80
+pointX = 0
+pointY = 0
 widthX = 90
 widthY = 50
 frameNo = 0
