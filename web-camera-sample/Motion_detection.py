@@ -8,7 +8,7 @@ frameNo = 0
 P_count = 0
 list = [0,0,0,0,0]
 
-cap = cv2.VideoCapture("C:/Users/intern/Downloads/fire.mp4")
+cap = cv2.VideoCapture("C:/Users/intern/Downloads/hi.mp4")
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 W = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 H = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
@@ -33,7 +33,7 @@ while True:
     thresh_con = img.copy()
     for i, contour in enumerate(contours):
         area = cv2.contourArea(contour)
-        if area > 300:
+        if area > 3000:
             x,y,w,h = cv2.boundingRect(contour)
             cv2.rectangle(thresh_con,(x+pointX,y+pointY),(x+pointX + w, y+pointY + h), (0, 255, 0), cv2.LINE_4)
             list.pop(0)
